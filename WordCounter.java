@@ -35,24 +35,25 @@ public class WordCounter {
 
         scanner.close();
 
-        if(choice == 1) {
-            try {
-                processFile() ;                
-            } catch (TooSmallTextException e) {
-               
-            } catch (InvalidStopwordException e) {
-                
-            }
-        } else if(choice == 2) {
-            try {
-                processText() ;              
-            } catch (EmptyFileException e) {
+        StringBuffer buffer ;
+    
+        try {
+            // create new StringBuffer
+            if(choice == 1)
+                buffer = new StringBuffer(processFile(stopWord)) ;  
+            else
+                buffer = new StringBuffer(stopWord) ;
 
-            } catch (InvalidStopwordException e) {
+            String result = processText(buffer, stopWord) ;
 
-            } catch (TooSmallTextException e) {
+        } catch (EmptyFileException e) {
 
-            }
+        } catch (InvalidStopwordException e) {
+
+        } catch (TooSmallTextException e) {
+
+        } catch (Exception e) {
+
         }
     }
 }
