@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class WordCounter {
 
-    public static int processText(StringBuffer text, String stopWord) throws InvalidStopwordException, TooSmallText {
+    public static int processText(StringBuffer text, String stopWord) throws InvalidStopwordException, TooSmallTextException {
         
         int numWords = 0;
         boolean found = false;
@@ -25,7 +25,7 @@ public class WordCounter {
         } 
 
         if(numWords < 5)
-            throw new TooSmallText(numWords) ;
+            throw new TooSmallTextException(numWords) ;
         
         if(!found)
             throw new InvalidStopwordException(stopWord) ;
@@ -102,12 +102,12 @@ public class WordCounter {
                             System.out.println("Found " + result + " words.") ;
                         } catch (InvalidStopwordException e1) { // CATCH
                             System.out.println(e1);
-                        } catch (TooSmallText e1) { // CATCH
+                        } catch (TooSmallTextException e1) { // CATCH
                             System.out.println(e1);
                         }
 
                         newScanner.close();
-                    } catch (TooSmallText e) { // SECOND INNER CATCH
+                    } catch (TooSmallTextException e) { // SECOND INNER CATCH
                         System.out.println(e);
                     }
 
@@ -125,12 +125,12 @@ public class WordCounter {
                         System.out.println("Found " + result + " words.") ;
                     } catch (InvalidStopwordException e2) {
                         System.out.println(e2);
-                    } catch (TooSmallText e2) {
+                    } catch (TooSmallTextException e2) {
                         System.out.println(e2);
                     }
 
                     newScanner.close();
-                } catch (TooSmallText e1) {
+                } catch (TooSmallTextException e1) {
                     System.out.println(e1);
                 }
             }
@@ -147,11 +147,11 @@ public class WordCounter {
                     System.out.println("Found " + result + " words.") ;
                 } catch (InvalidStopwordException e1) {
                     System.out.println(e1);
-                } catch (TooSmallText e1) {
+                } catch (TooSmallTextException e1) {
                     System.out.println(e1);
                 }
                 newScanner.close() ;
-            } catch (TooSmallText e) {
+            } catch (TooSmallTextException e) {
                 System.out.println(e);
             }
         }
