@@ -1,0 +1,41 @@
+commit b83cca17b2dd27bc144bc79670fb40261206dd8f
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Mon Nov 3 02:55:28 2025 -0500
+
+    Can't get last 5 to pass
+
+commit 8641659eb7d53697cf1ac0f86709f27c519e7501
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Sun Nov 2 22:08:06 2025 -0500
+
+    completed initial implementation. onto debugging.
+
+commit 55cca8914f823042596abdbb4312b8b037eba045
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Mon Oct 27 15:19:43 2025 -0400
+
+    Lab over: Continued working on main
+
+commit dc05035814f75e171f9127c748b126fe442bcd29
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Mon Oct 27 14:46:29 2025 -0400
+
+    In lab commit: started drafting main
+
+commit 0707e55d3e7bd2ee6828d40bcab8867495c37cb6
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Mon Oct 27 11:11:53 2025 -0400
+
+    added junit
+
+commit 419893b3d3065145602a7c096e2482c72d777694
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Sun Oct 26 23:11:32 2025 -0400
+
+    created all classes
+
+commit 2dcc7ab51da3be938f5e5a930aaf51ccaf6a1e3a
+Author: Sonia Lerner <sonialerner@Sonias-MacBook-Air.local>
+Date:   Sun Oct 26 23:05:39 2025 -0400
+
+    created repo
