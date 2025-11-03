@@ -1,3 +1,3 @@
 Enter 1 or 2.
 
-TooSmallTextException: Only found 3 words.
+TooSmallText: Only found 2 words.
