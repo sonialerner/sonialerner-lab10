@@ -2,8 +2,8 @@ import java.io.IOException;
 
 public class EmptyFileException extends IOException {
 
-    EmptyFileException(String s) {
-        super(s) ;
+    public EmptyFileException(String s) {
+        super(s + " was empty") ;
     }
     
 }

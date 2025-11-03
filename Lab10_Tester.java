@@ -40,7 +40,9 @@ public class Lab10_Tester {
     StringBuffer input = new StringBuffer("This sentence is long enough to yellow pass this test. But, it could be -- even -- longer...");
     String result = "error";
     try{
+      System.out.println("Before try.");
       result = "" + WordCounter.processText(input, "yellow");
+      System.out.println("After try");
     } catch (Exception e) {}
     
     assertEquals(expected, result);
